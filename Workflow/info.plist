@@ -1189,7 +1189,7 @@ done</string>
 	<key>readme</key>
 	<string>## Usage
 
-Use the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) to edit labels or add and remove tags from files and folders.
+Edit labels or add and remove tags from files and folders via the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/).
 
 ![Universal actions](images/about/universal_actions.png)
 
@@ -1479,10 +1479,8 @@ Alteratively, search for files and folders via the keywords (defaults: `label`, 
 			<string>tag_remove_keyword</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>2022.5</string>
+	<string>2022.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/label-colour-tag-workflow/</string>
 </dict>

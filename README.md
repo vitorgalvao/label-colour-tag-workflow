@@ -2,11 +2,11 @@
 
 Edit file labels and tags
 
-<a href='https://alfred.app/workflows/vitor/label-colour-tag'>⤓ Install From the Alfred Gallery</a>
+<a href='https://alfred.app/workflows/vitor/label-colour-tag'>⤓ Install on the Alfred Gallery</a>
 
 ## Usage
 
-Use the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/) to edit labels or add and remove tags from files and folders.
+Edit labels or add and remove tags from files and folders via the [Universal Actions](https://www.alfredapp.com/help/features/universal-actions/).
 
 ![Universal actions](Workflow/images/about/universal_actions.png)
 
