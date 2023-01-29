@@ -1199,7 +1199,7 @@ Edit labels or add and remove tags from files and folders via the [Universal Act
 
 ![Removing tags](images/about/remove_tags.png)
 
-Alteratively, search for files and folders via the keywords (defaults: `label`, `tag add`, and `tag del`) or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).</string>
+Alternatively, search for files and folders via the keywords (defaults: `label`, `tag add`, and `tag del`) or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A45BD00-F576-499F-93CA-7417C589D68A</key>
@@ -1480,7 +1480,7 @@ Alteratively, search for files and folders via the keywords (defaults: `label`, 
 		</dict>
 	</array>
 	<key>version</key>
-	<string>2022.6</string>
+	<string>2023.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/vitorgalvao/label-colour-tag-workflow/</string>
 </dict>

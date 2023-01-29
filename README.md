@@ -16,4 +16,4 @@ Edit labels or add and remove tags from files and folders via the [Universal Act
 
 ![Removing tags](Workflow/images/about/remove_tags.png)
 
-Alteratively, search for files and folders via the keywords (defaults: `label`, `tag add`, and `tag del`) or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).
+Alternatively, search for files and folders via the keywords (defaults: `label`, `tag add`, and `tag del`) or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).
