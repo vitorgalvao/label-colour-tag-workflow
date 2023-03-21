@@ -2,7 +2,7 @@
 
 Edit file labels and tags
 
-<a href='https://alfred.app/workflows/vitor/label-colour-tag'>⤓ Install on the Alfred Gallery</a>
+[⤓ Install on the Alfred Gallery](https://alfred.app/workflows/vitor/label-colour-tag)
 
 ## Usage
 
@@ -16,4 +16,4 @@ Edit labels or add and remove tags from files and folders via the [Universal Act
 
 ![Removing tags](Workflow/images/about/remove_tags.png)
 
-Alternatively, search for files and folders via the keywords (defaults: `label`, `tag add`, and `tag del`) or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).
+Alternatively, search for files and folders via the `label`, `tag add`, and `tag del` keywords or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).
