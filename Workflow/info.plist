@@ -6,6 +6,19 @@
 	<string>com.vitorgalvao.alfred.labelcolourtag</string>
 	<key>connections</key>
 	<dict>
+		<key>00DB2666-8906-4CC9-9D1F-7248CF67A444</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>35CE68B8-8127-4F57-B9EE-AB0F024E7B44</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0A45BD00-F576-499F-93CA-7417C589D68A</key>
 		<array/>
 		<key>0C53FAAF-F962-4019-9618-036BE2B05836</key>
@@ -46,6 +59,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1DEF0699-8B60-40BA-9CEC-C9B9CF186454</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00DB2666-8906-4CC9-9D1F-7248CF67A444</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2DC335C4-9FD2-48F5-BD04-D7E0F9B2F994</key>
 		<array>
 			<dict>
@@ -59,8 +85,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3387B057-FF89-44FF-8D81-1C1CB554C09C</key>
-		<array/>
 		<key>43962133-E07C-40AD-B795-6137123BDE82</key>
 		<array>
 			<dict>
@@ -301,7 +325,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3387B057-FF89-44FF-8D81-1C1CB554C09C</string>
+				<string>F35B4AF6-4EE9-44B3-89AD-8CD34FAC7002</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -336,11 +360,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EA57BFFF-6DE0-47C0-A66B-EFDCA0DF972E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1DEF0699-8B60-40BA-9CEC-C9B9CF186454</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F1C60735-DE65-4DFA-867D-77D8A70990FF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0C53FAAF-F962-4019-9618-036BE2B05836</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F35B4AF6-4EE9-44B3-89AD-8CD34FAC7002</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA57BFFF-6DE0-47C0-A66B-EFDCA0DF972E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -376,29 +426,28 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>readonly files=("${(ps:\t:)file_list}")
-
-for file in "${files[@]}"; do
-  ./labelcolor "${1}" "${file}"
-done</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>11</integer>
+				<key>tasksettings</key>
+				<dict>
+					<key>new_tags</key>
+					<string>Orange
+Red
+Yellow
+Blue
+Purple
+Green
+Gray</string>
+					<key>recursive</key>
+					<false/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.tags.remove</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
-			<string>3387B057-FF89-44FF-8D81-1C1CB554C09C</string>
+			<string>1DEF0699-8B60-40BA-9CEC-C9B9CF186454</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -427,7 +476,7 @@ done</string>
 				<key>fixedorder</key>
 				<true/>
 				<key>items</key>
-				<string>[{"imagefile":"47218367fbe74bafc77a1d88b4ec25665d0b28cc.png","title":"None","arg":"none","subtitle":"Removes label"},{"imagefile":"543edabc69cbb4b0d171552f720abf49cb1c68bd.png","title":"Orange","arg":"orange","subtitle":"Applies the orange label"},{"imagefile":"2fe4895509bc95aea1502d619cebb187c2840be6.png","title":"Red","arg":"red","subtitle":"Applies the red label"},{"imagefile":"690f2643f116ed2e9c187bd32538cd41a264c3f1.png","title":"Yellow","arg":"yellow","subtitle":"Applies the yellow label"},{"imagefile":"e69112b68c5ae49aac0a20b148a1966b3023e25f.png","title":"Blue","arg":"blue","subtitle":"Applies the blue label"},{"imagefile":"6f50d75e73eb2f36c91b73b62ea6ef2880050015.png","title":"Purple","arg":"purple","subtitle":"Applies the purple label"},{"imagefile":"727e35472e8ae870dbc870c519f8492c5f804d8e.png","title":"Green","arg":"green","subtitle":"Applies the green label"},{"imagefile":"84cc7f091e8f5ab0ee990a22a30e076a80d7dd01.png","title":"Gray","arg":"gray","subtitle":"Applies the gray label"}]</string>
+				<string>[{"imagefile":"47218367fbe74bafc77a1d88b4ec25665d0b28cc.png","title":"None","arg":"none","subtitle":"Removes label"},{"imagefile":"543edabc69cbb4b0d171552f720abf49cb1c68bd.png","title":"Orange","arg":"Orange","subtitle":"Applies the orange label"},{"imagefile":"2fe4895509bc95aea1502d619cebb187c2840be6.png","title":"Red","arg":"Red","subtitle":"Applies the red label"},{"imagefile":"690f2643f116ed2e9c187bd32538cd41a264c3f1.png","title":"Yellow","arg":"Yellow","subtitle":"Applies the yellow label"},{"imagefile":"e69112b68c5ae49aac0a20b148a1966b3023e25f.png","title":"Blue","arg":"Blue","subtitle":"Applies the blue label"},{"imagefile":"6f50d75e73eb2f36c91b73b62ea6ef2880050015.png","title":"Purple","arg":"Purple","subtitle":"Applies the purple label"},{"imagefile":"727e35472e8ae870dbc870c519f8492c5f804d8e.png","title":"Green","arg":"Green","subtitle":"Applies the green label"},{"imagefile":"84cc7f091e8f5ab0ee990a22a30e076a80d7dd01.png","title":"Gray","arg":"Gray","subtitle":"Applies the gray label"}]</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>runningsubtext</key>
@@ -443,6 +492,99 @@ done</string>
 			<string>alfred.workflow.input.listfilter</string>
 			<key>uid</key>
 			<string>D630C27C-B886-4694-87FF-4701C20F9F67</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>new_tags</key>
+					<string>{var:colour}</string>
+					<key>recursive</key>
+					<false/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.tags.add</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>35CE68B8-8127-4F57-B9EE-AB0F024E7B44</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:colour}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>None</string>
+						<key>outputlabel</key>
+						<string>None</string>
+						<key>uid</key>
+						<string>60E7BBC9-D5CD-47C3-8AD9-0F5E39239906</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Colour</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>00DB2666-8906-4CC9-9D1F-7248CF67A444</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>	</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<false/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>EA57BFFF-6DE0-47C0-A66B-EFDCA0DF972E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:file_list}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>colour</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F35B4AF6-4EE9-44B3-89AD-8CD34FAC7002</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -597,23 +739,6 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Add Tags…</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>8D242CCD-E56E-49C8-89F8-0BA4D0F3F3CE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>tasksettings</key>
 				<dict>
 					<key>new_tags</key>
@@ -628,6 +753,23 @@ done</string>
 			<string>alfred.workflow.automation.task</string>
 			<key>uid</key>
 			<string>0A45BD00-F576-499F-93CA-7417C589D68A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Add Tags…</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>8D242CCD-E56E-49C8-89F8-0BA4D0F3F3CE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -689,6 +831,26 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string>{var:file_list}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>colour</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>BAF94C5F-1987-4546-B828-CD7911204DD9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>delimiter</key>
 				<string>,</string>
 				<key>discardemptyarguments</key>
@@ -704,26 +866,6 @@ done</string>
 			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
 			<string>5BEB09BC-154D-4A65-BDF1-B85BE4ADEA13</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{var:file_list}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>tags</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>BAF94C5F-1987-4546-B828-CD7911204DD9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -857,23 +999,6 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>{var:file_list}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>CA94920E-381B-4629-9445-26ED468BBFDA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>delimiter</key>
 				<string>	</string>
 				<key>discardemptyarguments</key>
@@ -895,17 +1020,37 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
-				<integer>1</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Remove Tags…</string>
+				<key>argument</key>
+				<string>{var:file_list}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>D26DA788-9BD0-466E-86CA-1E61871A68C5</string>
+			<string>CA94920E-381B-4629-9445-26ED468BBFDA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict>
+					<key>new_tags</key>
+					<string>{var:tags}</string>
+					<key>recursive</key>
+					<false/>
+				</dict>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/path.tags.remove</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>86BEAF42-622F-485B-B506-E700B1476FDB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -931,20 +1076,17 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>tasksettings</key>
-				<dict>
-					<key>new_tags</key>
-					<string>{var:tags}</string>
-					<key>recursive</key>
-					<false/>
-				</dict>
-				<key>taskuid</key>
-				<string>com.alfredapp.automation.core/files-and-folders/path.tags.remove</string>
+				<key>acceptsmulti</key>
+				<integer>1</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Remove Tags…</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.automation.task</string>
+			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
-			<string>86BEAF42-622F-485B-B506-E700B1476FDB</string>
+			<string>D26DA788-9BD0-466E-86CA-1E61871A68C5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -983,6 +1125,26 @@ done</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>file_list</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>49CB6A77-C462-4EA7-9C76-CA4860188086</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>delimiter</key>
 				<string>
 </string>
@@ -991,6 +1153,27 @@ done</string>
 			<string>alfred.workflow.utility.joinargs</string>
 			<key>uid</key>
 			<string>F1C60735-DE65-4DFA-867D-77D8A70990FF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>delimiter</key>
+				<string>,</string>
+				<key>discardemptyarguments</key>
+				<false/>
+				<key>outputas</key>
+				<integer>1</integer>
+				<key>trimarguments</key>
+				<true/>
+				<key>variableprefix</key>
+				<string>split</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.split</string>
+			<key>uid</key>
+			<string>BB4381E0-7189-47FA-B7C9-6E210C8F171A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1032,47 +1215,6 @@ done</string>
 			<string>alfred.workflow.utility.split</string>
 			<key>uid</key>
 			<string>664036DC-2492-4A36-85F3-4E383AF9D114</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>delimiter</key>
-				<string>,</string>
-				<key>discardemptyarguments</key>
-				<false/>
-				<key>outputas</key>
-				<integer>1</integer>
-				<key>trimarguments</key>
-				<true/>
-				<key>variableprefix</key>
-				<string>split</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.split</string>
-			<key>uid</key>
-			<string>BB4381E0-7189-47FA-B7C9-6E210C8F171A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>file_list</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>49CB6A77-C462-4EA7-9C76-CA4860188086</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1202,6 +1344,13 @@ Edit labels or add and remove tags from files and folders via the [Universal Act
 Alternatively, search for files and folders via the `label`, `tag add`, and `tag del` keywords or configure the [Hotkeys](https://www.alfredapp.com/help/workflows/triggers/hotkey/).</string>
 	<key>uidata</key>
 	<dict>
+		<key>00DB2666-8906-4CC9-9D1F-7248CF67A444</key>
+		<dict>
+			<key>xpos</key>
+			<real>795</real>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
 		<key>0A45BD00-F576-499F-93CA-7417C589D68A</key>
 		<dict>
 			<key>xpos</key>
@@ -1223,6 +1372,13 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>ypos</key>
 			<real>530</real>
 		</dict>
+		<key>1DEF0699-8B60-40BA-9CEC-C9B9CF186454</key>
+		<dict>
+			<key>xpos</key>
+			<real>625</real>
+			<key>ypos</key>
+			<real>20</real>
+		</dict>
 		<key>2DC335C4-9FD2-48F5-BD04-D7E0F9B2F994</key>
 		<dict>
 			<key>xpos</key>
@@ -1230,10 +1386,10 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>ypos</key>
 			<real>830</real>
 		</dict>
-		<key>3387B057-FF89-44FF-8D81-1C1CB554C09C</key>
+		<key>35CE68B8-8127-4F57-B9EE-AB0F024E7B44</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>970</real>
 			<key>ypos</key>
 			<real>20</real>
 		</dict>
@@ -1398,12 +1554,26 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
+		<key>EA57BFFF-6DE0-47C0-A66B-EFDCA0DF972E</key>
+		<dict>
+			<key>xpos</key>
+			<real>560</real>
+			<key>ypos</key>
+			<real>50</real>
+		</dict>
 		<key>F1C60735-DE65-4DFA-867D-77D8A70990FF</key>
 		<dict>
 			<key>xpos</key>
 			<real>560</real>
 			<key>ypos</key>
 			<real>830</real>
+		</dict>
+		<key>F35B4AF6-4EE9-44B3-89AD-8CD34FAC7002</key>
+		<dict>
+			<key>xpos</key>
+			<real>480</real>
+			<key>ypos</key>
+			<real>50</real>
 		</dict>
 		<key>F56C8137-B743-473E-879A-A6B99AA1D14B</key>
 		<dict>
