@@ -837,7 +837,7 @@ Gray</string>
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>colour</key>
+					<key>tags</key>
 					<string>{query}</string>
 				</dict>
 			</dict>
