@@ -722,6 +722,8 @@ Gray</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Comma-separated list of tags to add</string>
 				<key>text</key>
@@ -1059,6 +1061,8 @@ Gray</string>
 			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
+				<key>skipuniversalaction</key>
+				<true/>
 				<key>subtext</key>
 				<string>Comma-separated list of tags to remove, or leave empty to delete all</string>
 				<key>text</key>
