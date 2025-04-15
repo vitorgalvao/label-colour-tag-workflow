@@ -50,7 +50,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D09E3D43-89C6-420A-8E35-E1270B1BD594</string>
+				<string>F1FAA5CC-777F-4C8A-B165-EA0FFE336E71</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -167,7 +167,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E43EBBB7-5055-4B3F-BF52-4FA761A06EAB</string>
+				<string>C45CD014-7647-4AFD-B4BA-8AC5070BFA9A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -273,7 +273,20 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>49CB6A77-C462-4EA7-9C76-CA4860188086</string>
+				<string>EE3CDB1B-5FAD-4E46-96D7-31E5CA123DF9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C45CD014-7647-4AFD-B4BA-8AC5070BFA9A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E43EBBB7-5055-4B3F-BF52-4FA761A06EAB</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -373,11 +386,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EE3CDB1B-5FAD-4E46-96D7-31E5CA123DF9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49CB6A77-C462-4EA7-9C76-CA4860188086</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F1C60735-DE65-4DFA-867D-77D8A70990FF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0C53FAAF-F962-4019-9618-036BE2B05836</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F1FAA5CC-777F-4C8A-B165-EA0FFE336E71</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D09E3D43-89C6-420A-8E35-E1270B1BD594</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -611,37 +650,6 @@ Gray</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>7B358A3F-B206-4B26-BF0E-B9643D6808DE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -714,6 +722,52 @@ Gray</string>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
 			<string>43962133-E07C-40AD-B795-6137123BDE82</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>C45CD014-7647-4AFD-B4BA-8AC5070BFA9A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>7B358A3F-B206-4B26-BF0E-B9643D6808DE</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -874,37 +928,6 @@ Gray</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>10DBD5E7-B897-4A4F-8826-1EED17807443</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -977,6 +1000,52 @@ Gray</string>
 			<string>alfred.workflow.input.filefilter</string>
 			<key>uid</key>
 			<string>676428BE-22E0-4DD6-9C37-199AC5CD3FB4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>F1FAA5CC-777F-4C8A-B165-EA0FFE336E71</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>10DBD5E7-B897-4A4F-8826-1EED17807443</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -1225,37 +1294,6 @@ Gray</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>C2F549E4-CD4D-4B04-92A9-E1E6732BB185</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>anchorfields</key>
 				<true/>
 				<key>argumenttrimmode</key>
@@ -1331,6 +1369,52 @@ Gray</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>tasksettings</key>
+				<dict/>
+				<key>taskuid</key>
+				<string>com.alfredapp.automation.core/files-and-folders/finder.selection</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.automation.task</string>
+			<key>uid</key>
+			<string>EE3CDB1B-5FAD-4E46-96D7-31E5CA123DF9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>C2F549E4-CD4D-4B04-92A9-E1E6732BB185</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>## Usage
@@ -1374,7 +1458,7 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>530</real>
+			<real>650</real>
 		</dict>
 		<key>1DEF0699-8B60-40BA-9CEC-C9B9CF186454</key>
 		<dict>
@@ -1402,7 +1486,7 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>140</real>
 		</dict>
 		<key>49CB6A77-C462-4EA7-9C76-CA4860188086</key>
 		<dict>
@@ -1437,7 +1521,7 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>650</real>
+			<real>530</real>
 		</dict>
 		<key>6FB76A55-7732-4798-B4EC-C2D2ECDD0E28</key>
 		<dict>
@@ -1451,14 +1535,14 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>140</real>
+			<real>260</real>
 		</dict>
 		<key>7C9661C9-28F9-427C-8D6F-C607FD13127A</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>1040</real>
+			<real>920</real>
 		</dict>
 		<key>7DF83EAB-B126-438E-83FA-8E2239C5E485</key>
 		<dict>
@@ -1514,7 +1598,16 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>920</real>
+			<real>1040</real>
+		</dict>
+		<key>C45CD014-7647-4AFD-B4BA-8AC5070BFA9A</key>
+		<dict>
+			<key>note</key>
+			<string>Fixes selection when triggering in Quick Look</string>
+			<key>xpos</key>
+			<real>195</real>
+			<key>ypos</key>
+			<real>260</real>
 		</dict>
 		<key>CA94920E-381B-4629-9445-26ED468BBFDA</key>
 		<dict>
@@ -1565,12 +1658,30 @@ Alternatively, search for files and folders via the `label`, `tag add`, and `tag
 			<key>ypos</key>
 			<real>50</real>
 		</dict>
+		<key>EE3CDB1B-5FAD-4E46-96D7-31E5CA123DF9</key>
+		<dict>
+			<key>note</key>
+			<string>Fixes selection when triggering in Quick Look</string>
+			<key>xpos</key>
+			<real>195</real>
+			<key>ypos</key>
+			<real>1040</real>
+		</dict>
 		<key>F1C60735-DE65-4DFA-867D-77D8A70990FF</key>
 		<dict>
 			<key>xpos</key>
 			<real>560</real>
 			<key>ypos</key>
 			<real>830</real>
+		</dict>
+		<key>F1FAA5CC-777F-4C8A-B165-EA0FFE336E71</key>
+		<dict>
+			<key>note</key>
+			<string>Fixes selection when triggering in Quick Look</string>
+			<key>xpos</key>
+			<real>195</real>
+			<key>ypos</key>
+			<real>650</real>
 		</dict>
 		<key>F35B4AF6-4EE9-44B3-89AD-8CD34FAC7002</key>
 		<dict>
