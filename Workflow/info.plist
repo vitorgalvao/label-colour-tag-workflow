@@ -95,7 +95,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>49CB6A77-C462-4EA7-9C76-CA4860188086</key>
@@ -160,7 +160,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>7B358A3F-B206-4B26-BF0E-B9643D6808DE</key>
@@ -186,7 +186,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>7DF83EAB-B126-438E-83FA-8E2239C5E485</key>
@@ -214,7 +214,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>ACD77A2A-0A1E-4754-BD18-9EBF2A946A87</key>
@@ -331,7 +331,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>D630C27C-B886-4694-87FF-4701C20F9F67</key>
@@ -357,7 +357,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>E43EBBB7-5055-4B3F-BF52-4FA761A06EAB</key>
